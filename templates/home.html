@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block body %}
+
+
+
+
+<div class="row justify-content-center">
+  <!-- Portfolio Item 1-->
+  <div class="col-md-6 col-lg-4 mb-5">
+      <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+          <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+          </div>
+          <img src="{% static 'images/1.png' %}" class="img-fluid" alt="My_photo">
+      </div>
+  </div>
+  <!-- Portfolio Item 2-->
+  <div class="col-md-6 col-lg-4 mb-5">
+      <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+          <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+          </div>
+          <img src="{% static 'images/2.png' %}" class="img-fluid" alt="My_photo">
+      </div>
+  </div>
+  <!-- Portfolio Item 3-->
+  <div class="col-md-6 col-lg-4 mb-5">
+      <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+          <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+          </div>
+          <img src="{% static 'images/3.png' %}" class="img-fluid" alt="My_photo">
+      </div>
+  </div>
+  <!-- Portfolio Item 4-->
+  <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+      <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+          <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+          </div>
+          <img src="{% static 'images/4.png' %}" class="img-fluid" alt="My_photo">
+      </div>
+  </div>
+  <!-- Portfolio Item 5-->
+  <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+      <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+          <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+          </div>
+          <img src="{% static 'images/5.png' %}" class="img-fluid" alt="My_photo">
+      </div>
+  </div>
+  <!-- Portfolio Item 6-->
+  <div class="col-md-6 col-lg-4">
+      <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+          <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+          </div>
+          <img src="{% static 'images/6.png' %}" class="img-fluid" alt="My_photo">
+      </div>
+  </div>
+</div>
+</div>
+
+
+<section class="page-section bg-primary text-white mb-0" id="home">
+  <div class="container">
+      <!-- About Section Heading-->
+      <h2 class="page-section-heading text-center text-uppercase text-white">Home</h2>
+      <!-- Icon Divider-->
+      <div class="divider-custom divider-light">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+          <div class="divider-custom-line"></div>
+      </div>
+      <!-- home Section Content-->
+      <div class="row">
+          <div class="col-lg-4 ms-auto"><p class="lead"> The download includes the complete source files including HTML, CSS.</p></div>
+          <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers</p></div>
+      </div>
+      <!-- home Section Button-->
+      <div class="text-center mt-4">
+              <a href="{% url 'about' %}" class="btn btn-secondary">Go To About</a>
+              <a href="{% url 'contact' %}" class="btn btn-secondary">GO TO Contact</a>
+          </div>
+      </div>
+    </div>
+  </div>
+              
+  </div>
+</section>
+
+
+
+{% endblock %}
+

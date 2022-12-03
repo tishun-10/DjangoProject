@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="p-3 mb-2 bg-success text-white">
+    <div class="container">
+       <form method="post" >
+          {% csrf_token %}
+       <h2 class="text-center my-5">Contact Me</h2>
+       <div class="mb-3">
+           <label for="exampleFormControlInput1" class="form-label">Name</label>
+           <input name="name" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+       </div>
+       <div class="mb-3">
+           <label for="exampleFormControlInput1" class="form-label">Email address</label>
+           <input name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+       </div>
+       <div class="mb-3">
+           <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+           <textarea  name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+       </div>
+       <div>
+           <input class="btn btn-primary" type="submit" value="Submit"> 
+        </div>      
+    
+       </div>
+    </div>
+    </div>
+    </form>
+</div>
+    <div class="p-3 mb-2 bg-warning text-dark">
+       <div class="card text-center my-5"></div>
+          <div class="text-center my-5">
+            <h5 class="card-title">PHONE- 01884799889</h5>
+            <h6 class="card-subtitle mb-2 text-muted">ithouse@gmail.com</h6>
+            <p class="card-text">Office Address : Kolabagan 13/1 #road - 1ST lane 1205,Dhaka ,Bangladesh</p>
+            <a href="{% url 'about' %}" class="btn btn-primary">Go To About</a>
+            <a href="{% url 'home' %}" class="btn btn-primary">Go To Home</a>
+        </div>
+           </div>
+        </div>
+     </div>
+    </div>
+</div>
+      {%  endblock %} 
